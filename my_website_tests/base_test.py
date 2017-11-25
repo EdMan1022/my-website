@@ -1,7 +1,7 @@
 from flask_testing import TestCase
-from my_website import create_app
-from my_website import TestConfig
-from my_website import db
+from my_website.create_app import create_app
+from my_website.config import TestConfig
+from my_website.extensions import db
 
 
 class BaseTest(TestCase):

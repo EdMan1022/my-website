@@ -1,0 +1,11 @@
+Flask-Script
+Flask-Migrate
+python-dotenv
+flask
+psycopg2
+werkzeug
+Flask-WTF
+Flask-Testing
+sqlalchemy
+Flask-SQLAlchemy
+gunicorn

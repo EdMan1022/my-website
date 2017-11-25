@@ -2,7 +2,7 @@ from .base_config import BaseConfig
 import os
 
 
-class DevelopmentConfig(BaseConfig):
+class TestConfig(BaseConfig):
     """
     Config class used for development.
 
