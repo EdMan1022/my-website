@@ -29,7 +29,8 @@ def index_view(page_type):
     :return:
     """
     page_list_data, page_type_data = index_function(page_type)
-    return render_template('page_blueprint/pages/index.html')
+    return render_template('page_blueprint/pages/index.html', page_list_data=page_list_data,
+                           page_type_data=page_type_data)
 
 
 @page_blueprint.route('/<page_type>/<page_identifier>')
