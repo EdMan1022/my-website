@@ -1,0 +1,12 @@
+{% extends 'utilities/base.html' %}
+{% block title %}{{ page_data.title }}{% endblock %}
+{% block content %}
+    {% for content in page_data.content %}
+        {% include content.template %}
+    {% endfor %}
+{% endblock %}
+{% block js %}
+    {% for content in page_data.content %}
+        {{ content.js }}
+    {% endfor %}
+{% endblock %}
