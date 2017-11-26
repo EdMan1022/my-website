@@ -42,3 +42,4 @@ class ContentTest(BaseTest):
             duplicate_content = models.Content(id=content.id)
             db.session.add(duplicate_content)
             db.session.commit()
+
