@@ -1,0 +1,8 @@
+{% extends 'utilities/base.html' %}
+{% block title %}{{ page_data.title }}{% endblock %}
+{% block content %}
+    {% for page in page_data.pages %}
+        {% include 'page_blueprint/elements/page_link.html' %}
+    {% endfor %}
+{% endblock %}
+
