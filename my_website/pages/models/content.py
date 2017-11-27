@@ -12,12 +12,14 @@ class Content(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     page_id = db.Column(db.Integer, db.ForeignKey('page.id'))
     content_type_id = db.Column(db.Integer, db.ForeignKey('content_type.id'))
+    text_content_id = db.Column(db.Integer, db.ForeignKey('text_content.id'))
     created_time = db.Column(db.TIMESTAMP(timezone=True))
 
-    def __init__(self, id=None, content_type_id=None, created_time=None):
+    def __init__(self, id=None, content_type_id=None, created_time=None, text_content_id=None):
         if id is not None:
             self.id = id
         self.content_type_id = content_type_id
         self.created_time = created_time
+        self.text_content_id = text_content_id
 
     pass
